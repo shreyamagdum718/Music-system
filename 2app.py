@@ -1,16 +1,11 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import pickle
 import os
-import sys
-import subprocess
 
-subprocess.check_call([sys.executable, "-m", "pip", "install", "scikit-learn"])
-
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
 # ==================================================
 # PAGE CONFIG
 # ==================================================
